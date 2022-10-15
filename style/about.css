@@ -1,0 +1,5 @@
+@import "main.css";
+
+.card {
+  background-color: var(--main-color);
+}

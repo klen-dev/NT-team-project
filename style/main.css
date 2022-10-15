@@ -1,0 +1,34 @@
+/* header and footer */
+
+/* .card  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #ffc000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* first-desktop */
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 950px;
+  }
+}
