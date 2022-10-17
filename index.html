@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="head-header">
       <div class="container-header">
         <a class="active" href="#">RUS</a>
@@ -21,9 +21,11 @@
       </div>
     </div>
     <div class="container-header">
-      <nav>
+      <nav class="nav">
         <div class="logo">
-          <img src="./images/MILANDI.png" alt="logo">
+          <button class="toggle"></button>
+          <img class="logo1" src="./images/MILANDI.png" alt="logo">
+          <img class="logo2" src="./images/logo.svg" alt="">
         </div>
         <div class="navbar">
           <ul>
@@ -43,7 +45,7 @@
           <div class="nav-right">
             <button>Войти</button>
             <button>Зарегистрироваться</button>
-            <a href="#"><i class="fa-light fa-basket-shopping"></i></a>
+            <a href="#"><img src="./images/ic_cart.png" alt=""></a>
           </div>
         </div>
       </nav>
@@ -139,8 +141,139 @@
             </div>
           </div>
         </section>
+        <section class="sec-4">
+          <h2>Категории</h2>
+          <div class="categories">
+            <div class="categories_card">
+              <img src="./images/categ-1.png" alt="">
+              <p>Женская обувь</p>
+            </div>
+            <div class="categories_card">
+              <img src="./images/categ-2.png" alt="">
+            </div>
+            <div class="categories_card">
+              <img src="./images/categ-3.png" alt="">
+            </div>
+            <div class="categories_card">
+              <img src="./images/categ-4.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section class="sec-5">
+          <div class="sec-5__left">
+            <img src="./images/iphone.png" alt="">
+          </div>
+          <div class="sec-5__right">
+            <h2>Скачай приложение и получай призы каждый день</h2>
+            <p>Скачав наш приложение вы получаете возможность играть в призовые игры каждый день и выигровать разного рода подарки для себя.
+              В нашем приложении призовые игры проходят аблолютно каждый день и всё это совершенно бесплатно.</p>
+              <div><img src="./images/iphone-card.png" alt="">
+              <img src="./images/google-play.png" alt="">
+              </div>
+          </div>
+        </section>
+        <section class="sec-6">
+          <h2>Лучшие товары</h2>
+          <div class="best-cards">
+            <div class="best-card">
+              <img src="./images/best-1.png" alt="">
+              <div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                 <div class="best-card-star">
+                <img src="./images/stars.png" alt="">
+                <p>855 у.е.</p>
+              </div>
+              <button>Добавить в корзину</button>
+              </div>
+            </div>
+            <div class="best-card">
+              <img src="./images/best-2.png" alt="">
+              <div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                 <div class="best-card-star">
+                <img src="./images/stars.png" alt="">
+                <p>855 у.е.</p>
+              </div>
+              <button>Добавить в корзину</button>
+              </div>
+            </div>
+            <div class="best-card">
+              <img src="./images/best-3.png" alt="">
+              <div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                 <div class="best-card-star">
+                <img src="./images/stars.png" alt="">
+                <p>855 у.е.</p>
+              </div>
+              <button>Добавить в корзину</button>
+              </div>
+            </div>
+            <div class="best-card">
+              <img src="./images/best-4.png" alt="">
+              <div>
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit sed odio sed nascetur.</p>
+                 <div class="best-card-star">
+                <img src="./images/stars.png" alt="">
+                <p>855 у.е.</p>
+              </div>
+              <button>Добавить в корзину</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sec-7">
+          <div class="sec-7__left">
+            <img src="./images/sec-7.png" alt="">
+          </div>
+          <div class="sec-7__right">
+            <h2>Создай свой лук на все случаи жизни в “Imperia”</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam sollicitudin a cursus in. Vel sit donec semper magna dignissim. Amet, mi justo at metus vestibulum sollicitudin lacus. Nunc vel egestas fermentum pellentesque sed vitae vel.</p>
+            <div><button>начать покупки</button></div>
+          </div>
+        </section>
+        <section class="sec-8">
+          <div><h2>Скидка 30% на первую покупку обслютно для всех</h2></div>
+        </section>
       </div>
   </main>
-  <footer></footer>
+  <footer>
+   <div class="container">
+    <div>
+      <h5>про imperia</h5>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget pretium aenean dignissim sit cursus dictumst adipiscing nunc.</p>
+      <div><img src="./images/footer.png" alt=""></div>
+    </div>
+    <div>
+      <h5>контакты</h5>
+      <p>+998 90 958 78 87</p>
+      <p>support@fonon.uz</p>
+      <h5>рабочее время</h5>
+      <p>По будням 9:00 to 18:00</p>
+      <p>В выходные 11:00 to 18:00</p>
+    </div>
+    <div>
+      <h5>Меню</h5>
+      <p>Главная</p>
+      <p>О нас</p>
+      <p>Категории</p>
+      <p>Сотрудничество</p>
+    </div>
+    <div>
+      <h5>категории</h5>
+      <p>Женская одежда</p>
+      <p>Мужская одежда</p>
+      <p>Детская одежда</p>
+      <p>Обувь</p>
+      <p>Сумки</p>
+      <p>Аксесуары</p>
+    </div>
+   </div>
+  </footer>
+  
+  <script src="./js/index.js"></script>
 </body>
 </html>
