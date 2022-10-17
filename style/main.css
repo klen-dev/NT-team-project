@@ -31,6 +31,10 @@
 
 header{
   background-color: #FAFAFA;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
 }
 
 .head-header{
@@ -464,6 +468,7 @@ footer .container{
   padding: 46px 145px 0px 146px;
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 25px;
 }
 
 footer .container > div{
@@ -490,7 +495,112 @@ footer h5{
 @media screen and (max-width: 600px) {
   .container {
     max-width: 550px;
+    padding: 0px 5px;
   }
+
+  .head-header{
+    display: none;
+  }
+
+  .container-header{
+    padding: 0 15px;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  .logo{
+    display: flex;
+    gap: 15px;
+  }
+  .logo .toggle{
+    display: block;
+  }
+
+  .header--open .logo .toggle {
+    background-image: url("../images/times-solid.svg");
+  }
+
+  .header--open .logo{
+    display: none;
+  }
+
+  .header--open .logo .toggle {
+   margin-left: 200px;
+  }
+
+  .header--open .header .container-header nav .navbar ul{
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+  }
+  .header--open .header .container-header nav .navbar ul li {
+    min-width: 100%;
+  }
+  .header--open .header .container-header nav .navbar ul li a {
+    padding: 13px 0;
+    min-width: 100%;
+  }
+
+  .header--open .header .container-header nav .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 36px ;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: cyan; */
+  }
+
+  .header--open .header .container-header nav .navbar a {
+    font-size: 24px;
+  }
+
+  .header--open .header .container-header nav .navbar ul {
+    flex-direction: column;
+  }
+   .nav-right button{
+    display: none;
+   }
+   .logo{
+    align-items: center;
+    gap: 15px;
+   }
+   .logo1{
+    display: none;
+   }
+   .logo2{
+    display: block;
+   }
+
+   .sec-1 .container{
+    height: 100%;
+   }
+   .sec-1__right{
+    display: flex;
+    justify-content: flex-end;
+   }
+   .sec-1__right img{
+    max-width: 70%;
+    padding-top: 50px;
+   }
+   .sec-2__cards{
+    padding-left: 0px;
+   }
+   .sec-2__cards>div{
+    width: 70%;
+   }
+   .sec-5{
+    padding-right: 15px;
+    padding-left: 15px;
+   }
 }
 
 @media screen and (max-width: 1000px) {
@@ -624,4 +734,5 @@ footer h5{
     padding-bottom: 25px;
     padding-right: 25px;
   }
+
 }
