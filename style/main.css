@@ -5,6 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat';
 }
 
 :root {
@@ -66,6 +67,20 @@ nav{
   padding: 20px 0px;
 }
 
+.logo .toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  background-image: url("../images/bars-solid.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.logo2{
+  display: none;
+}
+
 .navbar{
   display: flex;
   gap: 223px;
@@ -111,6 +126,8 @@ nav{
   border-radius: 4px;
   border-color: transparent;
 }
+
+
 
 main{
   background-color: var(--basic-color);
@@ -278,7 +295,193 @@ justify-content: space-between;
   border-radius: 6px; 
 }
 
+.sec-4{
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
 
+.sec-4 h2{
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  padding-bottom: 24px;
+}
+
+.categories{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.categories_card:first-child{
+  position: relative;
+}
+
+.categories_card p{
+  position: absolute;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFC000;
+  padding: 22px 32px;
+  top: 275px;
+  background-color: #000000;
+  width: 100%;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.sec-5{
+  padding-left: 145px;
+  padding-right: 145px;
+  margin-top: 245px;
+  background-color: #000000;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 64px;
+  padding-bottom: 56px;
+}
+
+.sec-5__right{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sec-5__right h2{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #FFFFFF;
+}
+
+.sec-5__right p{
+  color: #FFFFFF;
+}
+
+.sec-5__right div{
+  display: flex;
+  gap: 30px;
+}
+
+.sec-6{
+  padding-bottom: 64px;
+}
+
+.sec-6 h2{
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+  padding-bottom: 24px;
+  padding-top: 64px;
+}
+
+.sec-7{
+  display: flex;
+  padding-bottom: 48px;
+}
+
+.sec-7__right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  padding-left: 32px;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.sec-7__right h2{
+  max-width: 556px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+}
+
+.sec-7__right p{
+  max-width: 558px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
+
+.sec-7__right button{
+  font-weight: 800;
+  align-items: center;
+  padding: 4px 8px;
+  bottom: 18.75%;
+  background: #FFC000;
+  border-radius: 4px;
+  border-color: transparent;
+}
+
+.sec-8{
+  padding-bottom: 80px;
+}
+
+.sec-8 h2{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #0D0D0D;
+  max-width: 666px;
+}
+
+.sec-8 div{
+  background-color: #FFC000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 470px;
+}
+
+footer .container{
+  padding: 46px 145px 0px 146px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .container > div{
+  max-width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer h5{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #000000;
+}
 
 
 
@@ -293,5 +496,132 @@ justify-content: space-between;
 @media screen and (max-width: 1000px) {
   .container {
     max-width: 950px;
+    padding: 0px 5px;
+  }
+
+  .head-header{
+    display: none;
+  }
+
+  .container-header{
+    padding: 0 15px;
+  }
+
+  .navbar ul{
+    display: none;
+  }
+
+  .logo{
+    display: flex;
+    gap: 15px;
+  }
+  .logo .toggle{
+    display: block;
+  }
+
+  .header--open .logo .toggle {
+    background-image: url("../images/times-solid.svg");
+  }
+
+  .header--open .logo{
+    display: none;
+  }
+
+  .header--open .logo .toggle {
+   margin-left: 200px;
+  }
+
+  .header--open .header .container-header nav .navbar ul{
+    gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+  }
+  .header--open .header .container-header nav .navbar ul li {
+    min-width: 100%;
+  }
+  .header--open .header .container-header nav .navbar ul li a {
+    padding: 13px 0;
+    min-width: 100%;
+  }
+
+  .header--open .header .container-header nav .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 45px 36px ;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background-color: cyan; */
+  }
+
+  .header--open .header .container-header nav .navbar a {
+    font-size: 24px;
+  }
+
+  .header--open .header .container-header nav .navbar ul {
+    flex-direction: column;
+  }
+
+  .sec-1__left{
+    display: none;
+  }
+
+  .sec-1{
+    position: static;
+    display: flex;
+    background-color: var(--sec-1);
+
+  }
+  .sec-1__right{
+    position: static;
+  }
+  .sec-2__cards{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sec-2__cards>div{
+    width: 50%;
+  }
+  .sec-2__cards p{
+    text-align: center;
+  }
+  .best-cards{
+    flex-wrap: wrap;
+  }
+  .categories{
+    flex-wrap: wrap;
+  }
+  .sec-5{
+    flex-direction: column;
+    height: 100%;
+  }
+  .sec-5__left img{
+    margin-top: -150px;
+  }
+  .sec-7{
+    flex-direction: column;
+  }
+  .sec-7__left img{
+    width: 100%;
+  }
+  .sec-7__right{
+    padding: 45px 25px;
+  }
+  footer .container{
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-right: 15px;
+  }
+  footer .container>div{
+    flex: 50%;
+    max-width: 50%;
+    padding-bottom: 25px;
+    padding-right: 25px;
   }
 }
