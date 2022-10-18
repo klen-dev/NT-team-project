@@ -10,10 +10,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700;800&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700;800&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="head-header">
       <div class="container-header">
         <a class="active" href="#">RUS</a>
@@ -21,29 +26,34 @@
       </div>
     </div>
     <div class="container-header">
-      <nav>
+      <nav class="nav">
         <div class="logo">
-          <img src="./images/MILANDI.png" alt="logo">
+          <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
+          <div class="logo1-div">
+            <img class="logo1" src="./images/MILANDI.png" alt="logo">
+          </div>
+          <img class="logo2" src="./images/logo.svg" alt="">
         </div>
         <div class="navbar">
-          <ul>
+          <ul id="menus">
+            <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
             <li>
-              <a href="index.html">Главная</a>
+              <a href="./index.html">Главная</a>
             </li>
             <li>
-              <a href="about.html">О нас</a>
+              <a href="./about.html">О нас</a>
             </li>
             <li>
-              <a href="categories.html">Категории</a>
+              <a href="./categories.html">Категории</a>
             </li>
             <li>
-              <a href="partner.html">Сотрудничество</a>
+              <a href="./partner.html">Сотрудничество</a>
             </li>
           </ul>
           <div class="nav-right">
-            <button>Войти</button>
+            <button type="reset" formaction="./login.html" >Войти</button>
             <button>Зарегистрироваться</button>
-            <a href="#"><i class="fa-light fa-basket-shopping"></i></a>
+            <a href="#"><img src="./images/ic_cart.png" alt=""></a>
           </div>
         </div>
       </nav>
@@ -206,6 +216,18 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function toggle() {
+      const menus = document.getElementById("menus");
+      if (menus.className === "navbar") {
+        menus.className = "navbar responsive";
+      } else {
+        menus.className = "navbar";
+      }
+    }
+  </script>
+
 </body>
 
 </html>
