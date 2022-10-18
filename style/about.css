@@ -1,5 +1,312 @@
 @import "main.css";
 
-.card {
-  background-color: var(--main-color);
+.biz {
+  background-color: #E5E5E5;
+}
+.h2 {
+   font-weight: 700;
+   font-size: 34px;
+   line-height: 140%;
+   text-align: center;
+   letter-spacing: 0.25px;
+   font-feature-settings: 'pnum' on, 'lnum' on;
+    padding-bottom: 25px;
+    padding-top: 64px;
+}
+.font-size {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.25px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+     padding-bottom: 25px;
+     padding-top: 64px;
+}
+.biz-haqimizda {
+  display: flex;
+  flex-wrap: wrap;
+}
+.biz-haqimizda1 {
+  width: 50%;
+}
+.biz-haqimizda1 h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  width: 557px;
+  height: 68px;
+  top: 311px;
+  margin-bottom: 24px;
+  margin-top: 64px;
+}
+.biz-haqimizda1 p {
+  width: 557px;
+  height: 120px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+.foto {
+  display: flex;
+  justify-content: end;
+}
+.servis {
+  background-color: white;
+}
+.shaxsiy-servis {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 43px 78px 0px 73px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 45px;
+}
+#prilojeniya {
+  /* display: flex; */
+   background: radial-gradient(100% 1071.07% at 0% 0%, #0F0D2B 0%, #0C0926 100%);
+}
+.prilojeniya {
+  display: flex;
+  color: #fff;
+  margin-top: 300px;
+  padding: 40px 0px;
+  flex-wrap: wrap;
+}
+.prl {
+  width: 30%;
+}
+.prl2 {
+  width: 70%;
+}
+.prl img {
+  margin-top: -200px;
+  margin-left: -50px;
+  width: 100%;
+}
+.prilojeniya h3 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-bottom: 24px;
+  width: 100%;
+}
+.prilojeniya p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 0.44px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  padding-bottom: 40px;
+  width: 100%;
+}
+.prl2 a {
+  margin-right: 31px;
+}
+#iframe{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 152px;
+  padding-bottom: 62px;
+}
+.frm {
+  width: 50%;
+}
+.frm1 {
+  width: 50% ;
+  padding: 0px 147px 0px 128px;
+}
+.frm1 ul {
+  display: flex;
+  flex-wrap: wrap; 
+}
+.frm1 ul li {
+  width: 50%;
+  list-style: none;
+  padding-right: 128px;
+  padding-bottom: 36px;
+
+}
+.frm1 h3 {
+  width: 460px;
+  height: 128px;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 64px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  margin-bottom:65px ;
+
+}
+li p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
+li h4 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+
+
+
+
+
+
+
+/* responsivlik */
+@media  screen and (max-width:600px) {
+    .container {
+      max-width: 550px;
+      padding: 0px 28px;
+    }
+    .biz h2 {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .biz-haqimizda{
+      flex-direction: column-reverse;
+    }
+    .biz-haqimizda1 {
+      width: 100%;
+    }
+    .biz-haqimizda1 h3  {
+      width: 100%;
+    }
+    .biz-haqimizda1 p  {
+      width: 100%;
+      margin-top: 50px;
+    }
+    .font-size {
+      font-size: 25px;
+      margin-top: 34px;
+    }
+    .foto {
+      justify-content: center;
+      padding-bottom: 19px;
+      
+    }
+    .foto img {
+      width: 100%;
+    }
+    .shaxsiy-servis {
+      justify-content: center;
+    }
+    .one {
+      padding: 34px 23px;
+      margin-bottom: 30px;
+      width: 100%;
+      box-shadow: 1px 1px 2px 2px rgb(96, 92, 92);
+    }
+    .icon {
+      padding-bottom: 19px;
+    }
+    .prl {
+      width: 100%;
+    }
+    .prl2 {
+      width: 100%;
+    }
+    .frm {
+     width: 100%;
+    }
+    .frm1 {
+     width: 100%;
+     padding: 0px 24px ;
+    
+    }
+    .frm1 h3 {
+      width: 100%;
+      height: 128px;
+      font-size: 24px;
+      margin-bottom: -60px;
+    }
+    .frm1 ul li {
+      padding-right:8px;
+      padding-bottom: 40px;
+      /* margin-top: -50px; */
+    
+    }
+    #iframe{
+      padding-top: 40px;
+    }  
+    
+}
+@media screen and (max-width:1000px){
+    .container {
+      max-width: 990px;
+      padding: 0px 50px;
+    }
+    .biz-haqimizda1 h3  {
+      width: 100%;
+      margin-top: 0px;
+    }
+    .biz-haqimizda1 p  {
+      width: 100%;
+      margin-top: 15px;
+    }
+    .foto img {
+      width: 100%;
+    }
+    .biz-haqimizda1 h3{
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 120%;
+    }
+    .one {
+      width: 150px;
+      padding: 20px 10px;
+      margin-bottom: 30px;
+      box-shadow: 1px 1px 2px 2px rgb(96, 92, 92);
+    }
+    .shaxsiy-servis {
+      padding: 40px 0px;
+    }
+    .icon {
+      padding-bottom: 10px;
+    }
+    .prilojeniya {
+      padding-top: 100px;
+    }
+    .prl2 a {
+      display: inline-block;
+      margin-bottom:  20px;
+    }
+    .frm {
+      width: 100%;
+     }
+     .frm1 {
+      width: 100%;
+      padding: 0px 24px ;
+     
+     }
+     .frm1 h3 {
+       width: 100%;
+       height: 128px;
+       font-size: 24px;
+       margin-bottom: -60px;
+     }
+     .frm1 ul li {
+       padding-right:8px;
+       padding-bottom: 40px;
+       /* margin-top: -50px; */
+     
+     }
+     #iframe{
+       padding-top: 40px;
+     } 
+
+
 }
