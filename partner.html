@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800&family=Roboto+Condensed:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
   </head>
   <body>
@@ -26,12 +27,15 @@
       <div class="container-header">
         <nav class="nav">
           <div class="logo">
-            <button class="toggle"></button>
-            <img class="logo1" src="./images/MILANDI.png" alt="logo" />
-            <img class="logo2" src="./images/logo.svg" alt="" />
+            <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
+            <div class="logo1-div">
+              <img class="logo1" src="./images/MILANDI.png" alt="logo">
+            </div>
+            <img class="logo2" src="./images/logo.svg" alt="">
           </div>
           <div class="navbar">
-            <ul>
+            <ul id="menus">
+              <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
               <li>
                 <a href="./index.html">Главная</a>
               </li>
@@ -46,9 +50,9 @@
               </li>
             </ul>
             <div class="nav-right">
-              <button>Войти</button>
+              <button type="reset" formaction="./login.html" >Войти</button>
               <button>Зарегистрироваться</button>
-              <a href="#"><img src="./images/ic_cart.png" alt="" /></a>
+              <a href="#"><img src="./images/ic_cart.png" alt=""></a>
             </div>
           </div>
         </nav>
@@ -121,5 +125,15 @@
         </div>
       </div>
     </footer>
+    <script>
+       function toggle() {
+        const menus = document.getElementById("menus");
+        if (menus.className === "navbar") {
+          menus.className = "navbar responsive";
+        } else {
+          menus.className = "navbar";
+        }
+      }
+    </script>
   </body>
 </html>
