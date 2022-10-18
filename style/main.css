@@ -29,8 +29,7 @@ html {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding:0px 147px;
 }
 
 header {
@@ -629,17 +628,13 @@ footer h5 {
   .responsive {
     position: fixed;
     display: inline-block !important;
-    z-index: 1;
     top: 0;
-    height: 100vh;
     left: 0;
-    right: 200px;
-    padding-left: 25px;
     background-color: #fff;
-    bottom: 0;
-    width: 50%;
     padding-top: 30px;
-    
+    padding-left: 30px;
+    padding-bottom: 100px;
+    padding-right: 50px;
 }
 .responsive ul{
   margin-bottom: 30px;
