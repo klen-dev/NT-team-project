@@ -30,12 +30,15 @@
     <div class="container-header">
       <nav class="nav">
         <div class="logo">
-          <button class="toggle"></button>
-          <img class="logo1" src="./images/MILANDI.png" alt="logo">
+          <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
+          <div class="logo1-div">
+            <img class="logo1" src="./images/MILANDI.png" alt="logo">
+          </div>
           <img class="logo2" src="./images/logo.svg" alt="">
         </div>
         <div class="navbar">
-          <ul>
+          <ul id="menus">
+            <div class="toogle"><i onclick="toggle()" class="fa-solid fa-bars"></i></div>
             <li>
               <a href="./index.html">Главная</a>
             </li>
@@ -289,7 +292,16 @@
     </div>
   </footer>
 
-  <script src="./js/index.js"></script>
+  <script>
+      function toggle() {
+        const menus = document.getElementById("menus");
+        if (menus.className === "navbar") {
+          menus.className = "navbar responsive";
+        } else {
+          menus.className = "navbar";
+        }
+      }
+  </script>
 </body>
 
 </html>

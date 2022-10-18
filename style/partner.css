@@ -93,6 +93,9 @@ p{
     h1{
         font-size: 34px;
     }
+    .section-right input{
+        padding-right: 5px;
+    }
 }
 @media screen and (max-width: 1000px){
     .container{
