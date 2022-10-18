@@ -72,3 +72,37 @@ p{
     font-feature-settings: 'pnum' on, 'lnum' on;
     color: #000000;    
 }
+
+@media screen and (max-width: 600px){
+    .container{
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
+    section{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .section-left{
+        margin-left: 10px;
+        margin-bottom: 40px;
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: 95%;
+    }
+    section{
+        flex-direction: column;
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .section-left{
+        margin-left: 10px;
+        margin-bottom: 40px;
+        padding: 0px;
+    }
+}
