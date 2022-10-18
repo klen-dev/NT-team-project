@@ -114,6 +114,8 @@
   margin-right: 31px;
 }
 #iframe{
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   padding-top: 152px;
