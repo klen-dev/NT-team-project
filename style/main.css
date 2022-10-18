@@ -636,8 +636,9 @@ footer h5 {
     padding-bottom: 100px;
     padding-right: 50px;
 }
-.responsive ul{
+.responsive #menus{
   margin-bottom: 30px;
+
 }
 .responsive li {
     width: 100%;
