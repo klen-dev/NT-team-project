@@ -1,0 +1,74 @@
+section{
+    display: flex;
+    padding-top: 172px;
+    padding-bottom: 80px;
+}
+
+.section-left{
+    margin-left: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 64px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    max-width: 658px;
+}
+
+.section-right form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.section-right input{
+    padding: 14px 226px 14px 22px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;  
+    border-color: #DBDEE7;  
+    border-radius: 6px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.section-right button{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #0D0D0D;
+    padding: 13px 50px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: #FFC000;
+    margin-top: 15px;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 34px;
+    padding-bottom: 8px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;    
+}
