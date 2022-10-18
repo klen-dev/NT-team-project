@@ -25,13 +25,15 @@ main .container h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 64px;
 }
 
 .inner-container li{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 10px;
+    flex: 25%;
 }
 
 .inner-container li p{
